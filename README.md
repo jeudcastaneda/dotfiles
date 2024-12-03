@@ -1,5 +1,4 @@
 # Dotfiles for developing environment
--------------------------
 
 **This programs need to be installed:**
 
