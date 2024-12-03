@@ -1,7 +1,9 @@
-~/.config/tmux/tmux.conf
+# ~/.config/tmux/tmux.conf
+----------------
 
-install:
+
+**Install:**
 
 Once tmux is install, you need to run TPM. So run:
-git clone https://github.com/tmux-plugings/tpm ~/.tmux/plugins/tpm 
+`git clone https://github.com/tmux-plugings/tpm ~/.tmux/plugins/tpm`
 
