@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Set up plugins
 require('lazy').setup {
   require 'plugins',
-  require 'plugins.debbugging',
+  -- require 'plugins.debbugging',
   require 'plugins.oil',
   require 'plugins.obsidian',
   require 'plugins.harpoon',
@@ -35,7 +35,3 @@ require('lazy').setup {
   require 'plugins.comment',
 }
 
--- vim.cmd("colorscheme tokyonight-storm")
-
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et

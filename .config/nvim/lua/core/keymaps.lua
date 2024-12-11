@@ -1,3 +1,6 @@
+-- For conciseness
+local opts = { noremap = true, silent = true }
+
 -- Set leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -79,3 +82,8 @@ vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 
 -- Dismiss Noice Message
 vim.keymap.set('n', '<leader>nd', '<cmd>NoiceDismiss<CR>', { desc = 'Dissmiss Noice Message' })
+
+
+-- Borderless lazygit
+vim.keymap.set("n", "<leader>gg", "<CMD>lazygit<CR>", { desc = "Lazygit (root dir)" })
+
