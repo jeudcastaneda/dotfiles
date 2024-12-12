@@ -1,5 +1,5 @@
-require 'core.options'  -- Load general options
-require 'core.keymaps'  -- Load general keymaps
+require 'core.options' -- Load general options
+require 'core.keymaps' -- Load general keymaps
 require 'core.snippets' -- Custom code snippets
 
 -- Set up the Lazy plugin manager
@@ -15,23 +15,28 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Set up plugins
 require('lazy').setup {
-  require 'plugins',
-  -- require 'plugins.debbugging',
-  require 'plugins.oil',
-  require 'plugins.obsidian',
+  require 'plugins.ai.copilot-chat',
+  require 'plugins.ai.copilot',
+  require 'plugins.bufferline',
+  require 'plugins.comment',
+  require 'plugins.dap.core',
+  require 'plugins.dap.nlua',
+  require 'plugins.gitsigns',
   require 'plugins.harpoon',
+  require 'plugins.indent-blankline',
+  require 'plugins.lsp',
+  require 'plugins.lualine',
+  require 'plugins.misc',
   require 'plugins.neoclip',
   require 'plugins.neotree',
   require 'plugins.nvim-ufo',
-  require 'plugins.colortheme',
-  require 'plugins.bufferline',
-  require 'plugins.lualine',
-  require 'plugins.treesitter',
+  require 'plugins.obsidian',
+  require 'plugins.oil',
   require 'plugins.telescope',
-  require 'plugins.lsp',
-  require 'plugins.gitsigns',
-  require 'plugins.alpha',
-  require 'plugins.indent-blankline',
-  require 'plugins.comment',
+  require 'plugins.treesitter',
+  require 'plugins.ui.alpha',
+  require 'plugins.ui.colortheme',
+  require 'plugins.ui.dashboard-nvim',
+  require 'plugins.ui.edgy',
+  require 'plugins.ui.treesitter-context',
 }
-

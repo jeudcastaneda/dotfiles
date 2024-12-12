@@ -8,8 +8,11 @@ vim.g.maplocalleader = ' '
 -- Disable the spacebar key's default behavior in Normal and Visual modes
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
--- For conciseness
-local opts = { noremap = true, silent = true }
+-- Move Lines
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = 'Move line up' }) -- move line up(n)
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = 'Move line down' }) -- move line down(n)
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = 'Move line up' }) -- move line up(v)
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = 'Move line down' }) -- move line down(v)
 
 -- save file
 vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
@@ -83,7 +86,5 @@ vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 -- Dismiss Noice Message
 vim.keymap.set('n', '<leader>nd', '<cmd>NoiceDismiss<CR>', { desc = 'Dissmiss Noice Message' })
 
-
 -- Borderless lazygit
-vim.keymap.set("n", "<leader>gg", "<CMD>lazygit<CR>", { desc = "Lazygit (root dir)" })
-
+vim.keymap.set('n', '<leader>gg', '<CMD>lazygit<CR>', { desc = 'Lazygit (root dir)' })
