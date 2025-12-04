@@ -85,6 +85,16 @@ vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 
 -- Dismiss Noice Message
 vim.keymap.set('n', '<leader>nd', '<cmd>NoiceDismiss<CR>', { desc = 'Dissmiss Noice Message' })
+vim.keymap.set("n", "<leader>nl", function()
+  require("noice").cmd("last")
+end, { desc = 'Show Last Notification' })
+vim.keymap.set("n", "<leader>nh", function()
+  require("noice").cmd("history")
+end, { desc = 'Show Notification History'})
 
 -- Borderless lazygit
 vim.keymap.set('n', '<leader>gg', '<CMD>lazygit<CR>', { desc = 'Lazygit (root dir)' })
+
+-- Run Glow on current buffer
+-- vim.keymap.set({'n', 'i', 'v'}, '<C-m>', '<CMD>Glow<CR>', { desc='Read MD file with Glow'})
+
