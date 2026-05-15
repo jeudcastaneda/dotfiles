@@ -249,5 +249,14 @@ return {
   },
   {
     'voldikss/vim-floaterm',
+  },
+  {
+  'hrsh7th/nvim-cmp',
+  event = 'InsertEnter', -- Or some other appropriate event
+  dependencies = {
+    'hrsh7th/cmp-nvim-lsp',
+    -- other necessary cmp sources like cmp-buffer, cmp-path, etc.
+    },
+  -- optional: add configuration for nvim-cmp here
   }
 }
