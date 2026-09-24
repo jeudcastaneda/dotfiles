@@ -1,3 +1,4 @@
+-- Startup dashboard with header, buttons, and shortcuts (alpha-nvim).
 return {
   'goolord/alpha-nvim',
   dependencies = {

@@ -17,7 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup {
   require 'plugins.trouble',
   require 'plugins.ai.copilot-chat',
-  require 'plugins.ai.copilot',
   require 'plugins.bufferline',
   require 'plugins.comment',
   require 'plugins.dap.core',
@@ -27,6 +26,7 @@ require('lazy').setup {
   require 'plugins.indent-blankline',
   require 'plugins.lsp.lspconfig',
   require 'plugins.lsp.mason',
+  require 'plugins.completion',
   require 'plugins.lualine',
   require 'plugins.misc',
   require 'plugins.neoclip',

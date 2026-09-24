@@ -9,14 +9,16 @@ if not status then
 end
 local extendedClientCapabilities = jdtls.extendedClientCapabilities
 
+local ok, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
+local capabilities = ok and cmp_nvim_lsp.default_capabilities() or nil
+
 local config = {
+  capabilities = capabilities,
   cmd = {
     'java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
     '-Declipse.product=org.eclipse.jdt.ls.core.product',
-    '-Dlog.protocol=true',
-    '-Dlog.level=ALL',
     '-Xmx1g',
     '--add-modules=ALL-SYSTEM',
     '--add-opens',

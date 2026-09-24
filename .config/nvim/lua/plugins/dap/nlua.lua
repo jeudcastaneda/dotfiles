@@ -1,3 +1,4 @@
+-- Attach nvim-dap to Neovim/Lua via one-small-step-for-vimkind (nlua adapter).
 return {
   "mfussenegger/nvim-dap",
   dependencies = {

@@ -1,3 +1,4 @@
+-- Pretty lists for diagnostics, LSP references, quickfix, and location lists (folke/trouble.nvim).
 return{
   "folke/trouble.nvim",
   opts = {}, -- for default options, refer to the configuration section for custom setup.

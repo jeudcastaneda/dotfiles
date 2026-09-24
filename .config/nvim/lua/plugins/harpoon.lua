@@ -1,3 +1,4 @@
+-- Mark and jump between a small set of project files (harpoon.nvim).
 return {
   'ThePrimeagen/harpoon',
   config = function()

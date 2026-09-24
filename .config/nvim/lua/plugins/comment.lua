@@ -1,4 +1,4 @@
--- Easily comment visual regions/lines
+-- Toggle line and block comments with Comment.nvim.
 return {
   'numToStr/Comment.nvim',
   opts = {},

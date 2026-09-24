@@ -1,3 +1,4 @@
+-- Indent guides and scope highlighting in the buffer (indent-blankline.nvim).
 return {
   'lukas-reineke/indent-blankline.nvim',
   main = 'ibl',

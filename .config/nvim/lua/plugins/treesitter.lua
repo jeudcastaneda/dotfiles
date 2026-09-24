@@ -1,4 +1,5 @@
-return { -- Highlight, edit, and navigate code
+-- Tree-sitter parsers for syntax highlighting, indent, and text objects (nvim-treesitter).
+return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
   main = 'nvim-treesitter.configs', -- Sets main module to use for opts

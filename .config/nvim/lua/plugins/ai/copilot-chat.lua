@@ -1,3 +1,4 @@
+-- In-editor GitHub Copilot chat, prompts, and code actions (CopilotChat.nvim).
 local M = {}
 
 ---@param kind string
@@ -6,7 +7,7 @@ function M.pick(kind)
     local actions = require("CopilotChat.actions")
     local items = actions[kind .. "_actions"]()
     if not items then
-      LazyVim.warn("No " .. kind .. " found on the current line")
+      vim.notify("No " .. kind .. " found on the current line", vim.log.levels.WARN)
       return
     end
     local ok = pcall(require, "fzf-lua")

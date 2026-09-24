@@ -1,3 +1,4 @@
+-- Debug Adapter Protocol: breakpoints, stepping, DAP UI, and language debug configs (nvim-dap).
 ---@param config {type?:string, args?:string[]|fun():string[]?}
 local function get_args(config)
   local args = type(config.args) == "function" and (config.args() or {}) or config.args or {} --[[@as string[] | string ]]
@@ -54,14 +55,17 @@ return {
     },
 
     config = function()
-      -- load mason-nvim-dap here, after all adapters have been setup
-      if LazyVim.has("mason-nvim-dap.nvim") then
-        require("mason-nvim-dap").setup(LazyVim.opts("mason-nvim-dap.nvim"))
-      end
-
       vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
 
-      for name, sign in pairs(LazyVim.config.icons.dap) do
+      local dap_icons = {
+        Stopped = { "󰁕 ", "DiagnosticWarn", "DapStoppedLine" },
+        Breakpoint = " ",
+        BreakpointCondition = " ",
+        BreakpointRejected = " ",
+        LogPoint = ".>",
+      }
+
+      for name, sign in pairs(dap_icons) do
         sign = type(sign) == "table" and sign or { sign }
         vim.fn.sign_define(
           "Dap" .. name,
@@ -124,7 +128,8 @@ return {
         -- Update this to ensure that you have the debuggers for the langs you want
       },
     },
-    -- mason-nvim-dap is loaded when nvim-dap loads
-    config = function() end,
+    config = function(_, opts)
+      require("mason-nvim-dap").setup(opts)
+    end,
   },
 }

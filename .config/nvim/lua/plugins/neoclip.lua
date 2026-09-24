@@ -1,3 +1,4 @@
+-- Yank history browser with Telescope (nvim-neoclip.lua).
 return {
   "AckslD/nvim-neoclip.lua",
   dependencies = {

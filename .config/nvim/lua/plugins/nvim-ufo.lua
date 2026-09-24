@@ -1,3 +1,4 @@
+-- Fast, semantic code folding with a dedicated fold column (nvim-ufo).
 return {
   "kevinhwang91/nvim-ufo",
   dependencies = "kevinhwang91/promise-async",

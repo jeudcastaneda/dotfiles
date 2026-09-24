@@ -1,3 +1,4 @@
+-- Colorscheme (Catppuccin mocha; optional themes commented below).
 return {
   {
     'catppuccin/nvim',

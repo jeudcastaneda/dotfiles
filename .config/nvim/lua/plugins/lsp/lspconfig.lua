@@ -1,3 +1,4 @@
+-- Language server setup, LSP keymaps on attach, and server-specific settings (nvim-lspconfig).
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
@@ -91,7 +92,7 @@ return {
     })
 
     vim.lsp.config("graphql", {
-      filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+      filetypes = { "graphql", "gql" },
     })
 
     vim.lsp.config("emmet_ls", {
@@ -99,7 +100,7 @@ return {
     })
 
     vim.lsp.config("eslint", {
-      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+      filetypes = { "javascript", "typescript", "javascriptreact", "typescriptreact", "svelte", "vue" },
     })
 
     vim.lsp.config("lua_ls", {

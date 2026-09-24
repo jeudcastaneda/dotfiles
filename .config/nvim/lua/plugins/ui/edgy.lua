@@ -1,5 +1,5 @@
+-- Workspaces that pin neo-tree, terminal, and other windows to screen edges (edgy.nvim).
 return {
-  -- edgy
   {
     'folke/edgy.nvim',
     event = 'VeryLazy',

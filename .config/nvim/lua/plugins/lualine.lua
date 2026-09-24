@@ -1,3 +1,4 @@
+-- Customizable statusline (mode, file, diagnostics, etc.) via lualine.nvim.
 return {
   'nvim-lualine/lualine.nvim',
   config = function()

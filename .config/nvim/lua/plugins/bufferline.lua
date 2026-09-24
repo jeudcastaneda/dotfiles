@@ -1,3 +1,4 @@
+-- Tabline showing open buffers with icons and close actions (bufferline.nvim).
 return {
   'akinsho/bufferline.nvim',
   dependencies = {

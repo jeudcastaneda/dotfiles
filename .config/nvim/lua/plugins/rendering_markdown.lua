@@ -1,3 +1,4 @@
+-- Markdown preview in browser, live preview pickers, and in-buffer rendered MD (render-markdown.nvim).
 return {
   {
     "iamcco/markdown-preview.nvim",

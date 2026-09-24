@@ -1,3 +1,4 @@
+-- Edit the filesystem like a buffer; netrw-style explorer (oil.nvim).
 return {
   'stevearc/oil.nvim',
   opts = {},

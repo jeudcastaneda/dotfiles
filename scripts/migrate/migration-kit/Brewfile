@@ -1,0 +1,100 @@
+tap "homebrew/services"
+tap "insulet/devops", "ssh://git@bitbucket.insulet.com/devops/homebrew.git"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Decentralized dependency manager for Cocoa
+brew "carthage"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Improved top (interactive process viewer)
+brew "htop"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@78"
+# Library to communicate with iOS devices natively
+brew "libimobiledevice"
+# USB multiplexor library for iOS devices
+brew "libusbmuxd"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
+# Tool for managing apps on iOS devices
+brew "ideviceinstaller"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Simple terminal UI for git commands
+brew "lazygit"
+# C websockets server library
+brew "libwebsockets"
+# Powerful, lightweight programming language
+brew "lua"
+# Mac App Store command-line interface
+brew "mas"
+# CLI for Apple's Private (Closed) Mobile Device Framework
+brew "mobiledevice"
+# Message broker implementing the MQTT protocol
+brew "mosquitto", restart_service: :changed
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Python interface to gdbm
+brew "python-gdbm@3.11"
+# Python interface to Tcl/Tk
+brew "python-tk@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Python interface to Tcl/Tk
+brew "python-tk@3.9"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# Tool to enforce Swift style and conventions
+brew "swiftlint"
+# User interface to the TELNET protocol
+brew "telnet"
+# Simplified and community-driven man pages
+brew "tldr"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# JavaScript package manager
+brew "yarn"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Android SDK component
+cask "android-platform-tools"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+mas "Exporter", id: 1099120373
+go "github.com/spf13/cobra-cli"
+npm "corepack"
+npm "defuddle"
+npm "n"
+npm "newman"
+npm "typescript-language-server"
+npm "typescript"

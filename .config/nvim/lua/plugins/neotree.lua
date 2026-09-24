@@ -1,3 +1,4 @@
+-- Sidebar file tree with git status, filters, and preview (neo-tree.nvim).
 return {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",

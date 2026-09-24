@@ -1,3 +1,4 @@
+-- Install and manage LSP servers, formatters, and linters (mason.nvim + mason-lspconfig).
 return {
   "williamboman/mason.nvim",
   dependencies = {

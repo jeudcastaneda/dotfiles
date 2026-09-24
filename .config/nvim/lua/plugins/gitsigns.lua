@@ -1,4 +1,4 @@
--- Adds git related signs to the gutter, as well as utilities for managing changes
+-- Git change signs in the gutter and hunk actions (gitsigns.nvim).
 return {
   'lewis6991/gitsigns.nvim',
   opts = {
