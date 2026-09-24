@@ -13,7 +13,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Set up plugins
+-- Set up plugins :)
 require('lazy').setup {
   require 'plugins.trouble',
   require 'plugins.ai.copilot-chat',
