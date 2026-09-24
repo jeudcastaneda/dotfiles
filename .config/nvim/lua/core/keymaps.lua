@@ -98,3 +98,10 @@ vim.keymap.set('n', '<leader>gg', '<CMD>lazygit<CR>', { desc = 'Lazygit (root di
 -- Run Glow on current buffer
 -- vim.keymap.set({'n', 'i', 'v'}, '<C-m>', '<CMD>Glow<CR>', { desc='Read MD file with Glow'})
 
+-- Copy relative path
+vim.keymap.set("n", "<leader>cr", ':let @+ = expand("%")<CR>', { desc = "Copy relative path" })
+
+-- Copy absolute path
+vim.keymap.set("n", "<leader>ca", ':let @+ = expand("%:p")<CR>', { desc = "Copy absolute path" })
+
+
